@@ -1,0 +1,91 @@
+    @import './variables';
+    body {
+        background: $main-background-color;
+        font-family: 'Inter', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    
+    .row {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: 10% auto;
+        background: $card-background;
+        border-radius: 7px;
+        overflow: hidden;
+        .left-col {
+            color: #fff;
+            text-align: left;
+            padding: 5em 5em;
+            h1 {
+                span {
+                    color: $Soft-violet-accent
+                }
+            }
+            p {
+                color: $main-paragraph-color;
+                line-height: 25px;
+                margin-bottom: 15px;
+                font-weight: normal;
+            }
+            .stats {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    flex-basis: 32%;
+                    h2 {
+                        margin-bottom: -15px;
+                    }
+                    p {
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                        font-family: 'Inter', sans-serif;
+                        font-family: 'Lexend Deca', sans-serif;
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+        .right-col {
+            width: 100%;
+            height: 439px;
+            background: url('/images/image-header-desktop.jpg');
+            background-size: cover;
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 439px;
+                background: $Soft-violet-accent;
+                opacity: 0.5;
+            }
+        }
+    }
+    
+    @media only screen and(max-width:700px) {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .left-col {
+            text-align: center !important;
+            padding: 5px 8px !important;
+            margin: 0;
+            h1 {
+                font-size: 25px;
+            }
+            .stats {
+                flex-direction: column;
+            }
+        }
+        .right-col {
+            height: 218px !important;
+            .overlay {
+                height: 218px !important;
+            }
+        }
+    }

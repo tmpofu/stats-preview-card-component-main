@@ -1,0 +1,115 @@
+body {
+  background: #090b1a;
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10% auto;
+  background: #1b1938;
+  border-radius: 7px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.row .left-col {
+  color: #fff;
+  text-align: left;
+  padding: 5em 5em;
+}
+
+.row .left-col h1 span {
+  color: #aa5cdb;
+}
+
+.row .left-col p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 25px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.row .left-col .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row .left-col .stats div {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.row .left-col .stats div h2 {
+  margin-bottom: -15px;
+}
+
+.row .left-col .stats div p {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 16px;
+}
+
+.row .right-col {
+  width: 100%;
+  height: 439px;
+  background: url("/images/image-header-desktop.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.row .right-col .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 439px;
+  background: #aa5cdb;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .left-col {
+    text-align: center !important;
+    padding: 5px 8px !important;
+    margin: 0;
+  }
+  .left-col h1 {
+    font-size: 25px;
+  }
+  .left-col .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-col {
+    height: 218px !important;
+  }
+  .right-col .overlay {
+    height: 218px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
