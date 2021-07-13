@@ -69,7 +69,7 @@ body {
 .row .right-col {
   width: 100%;
   height: 439px;
-  background: url("/stats-preview-card-component-main/blob/master/images/image-header-desktop.JPG");
+  background: url("../images/image-header-desktop.jpg");
   background-size: cover;
   position: relative;
 }
